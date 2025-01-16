@@ -1,3 +1,49 @@
+# My Improvements (for now)
+
+## Voice String Format
+
+The `voice` parameter in the text-to-speech API can be used to dynamically adjust the rate and pitch of the TTS output. The format is as follows:
+
+`voice_name(+/-)(rate_value)r(+/-)(pitch_value)p`
+
+-   `voice_name`: The base voice name (e.g., `en-US-AnaNeural`).
+-   `+/-`: Indicates an increase or decrease.
+-   `rate_value`: The rate change as a percentage.
+-   `pitch_value`: The pitch change in Hertz (Hz).
+-   `r`: Indicates rate adjustment
+-   `p`: Indicates pitch adjustment
+
+The order of `r` and `p` does not matter.
+
+Examples:
+
+-   `en-US-AnaNeural`: AnaNeural with default rate and pitch.
+-   `en-US-AnaNeural+20r-10p`: AnaNeural with +20% rate and -10Hz pitch.
+-   `en-US-AnaNeural-5p`: AnaNeural with default rate and -5Hz pitch.
+
+## Saving Files
+
+To save the generated output to a file, add the `+s` flag to the voice string. The file will be saved to the directory specified by the `TTS_OUTPUT_DIR` variable in the `.env` file, or to `tts_output` by default. Example:
+
+`en-US-AnaNeural+s`
+
+This flag can be used with rate and pitch changes as well, for example: `en-US-AnaNeural+20r-10p+s`
+
+## Voice Mappings
+
+You can define custom aliases for voices and their modifications in the `voice_mappings.json` file. This allows you to use a simplified name to use more complex voice setups, without having to memorize them. Example:
+
+```json
+{
+  "fable": "en-GB-SoniaNeural-5r+10p",
+  "brave": "en-US-BrandonNeural+20r-8p"
+}
+```
+
+# Back to your Regularly Scheduled README
+
+----
+
 # OpenAI-Compatible Edge-TTS API 🗣️
 
 ![GitHub stars](https://img.shields.io/github/stars/travisvn/openai-edge-tts?style=social)
