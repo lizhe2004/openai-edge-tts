@@ -1,4 +1,22 @@
 {
-    "fable": "en-GB-SoniaNeural-5r+10p",
-    "brave": "en-US-BrandonNeural+20r-8p"
+    "alloy": "zh-CN-YunjianNeural",
+    "fable": "zh-CN-YunxiNeural",
+    "brave": "zh-CN-YunyangNeural",
+    "nova": "zh-CN-XiaoxiaoNeural",
+    "shimmer": "zh-CN-XiaoyiNeural",
+    "echo": "zh-CN-YunxiaNeural",
+    "onyx": "zh-CN-shaanxi-XiaoniNeural",
+
+    "yunxi": "zh-CN-YunxiNeural",
+    "xiaoxiao": "zh-CN-XiaoxiaoNeural",
+
+    "mike": "zh-CN-YunjianNeural",
+    "xiaoshuai": "zh-CN-YunxiNeural",
+    "xinwen": "zh-CN-YunyangNeural",
+    "girl": "zh-CN-XiaoyiNeural",
+    "boy": "zh-CN-YunxiaNeural",
+    "liaoning": "zh-CN-liaoning-XiaobeiNeural",
+    "shanxi": "zh-CN-shaanxi-XiaoniNeural",
+    "nvsheng": "zh-CN-XiaoxiaoNeural"
+
 }
